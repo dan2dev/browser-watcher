@@ -1,0 +1,48 @@
+{
+  "name": "browser-watcher",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "yarn run build",
+    "prepublishOnly": "yarn test && yarn run lint",
+    "preversion": "yarn run lint",
+    "version": "yarn run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dan2dev/browser-watcher.git"
+  },
+  "keywords": [
+    "observer",
+    "history",
+    "browser"
+  ],
+  "author": "C-J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dan2dev/browser-watcher/issues"
+  },
+  "homepage": "https://github.com/dan2dev/browser-watcher#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "@types/window-or-global": "^1.0.0",
+    "codecov": "^3.1.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.13.2",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.8.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
