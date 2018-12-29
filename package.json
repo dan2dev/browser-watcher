@@ -1,6 +1,6 @@
 {
   "name": "browser-watcher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -24,20 +24,27 @@
     "history",
     "browser"
   ],
-  "author": "C-J",
-  "license": "ISC",
+  "author": "Danilo Castro",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dan2dev/browser-watcher/issues"
   },
   "homepage": "https://github.com/dan2dev/browser-watcher#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
     "@types/jest": "^23.3.10",
+    "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",
     "@types/window-or-global": "^1.0.0",
+    "chai": "^4.2.0",
     "codecov": "^3.1.0",
+    "istanbul": "^0.4.5",
     "jest": "^23.6.0",
+    "mocha": "^5.2.0",
     "prettier": "^1.13.2",
+    "source-map-support": "^0.5.9",
     "ts-jest": "^22.4.6",
+    "ts-node": "^7.0.1",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
     "typescript": "^2.8.3"
@@ -45,6 +52,5 @@
   "files": [
     "lib/**/*"
   ],
-  "dependencies": {
-  }
+  "dependencies": {}
 }
