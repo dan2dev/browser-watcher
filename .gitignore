@@ -4,3 +4,4 @@ node_modules
 yarn.lock
 .nyc_output
 .coveralls.yml
+yarn-error.log

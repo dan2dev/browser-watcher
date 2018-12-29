@@ -40,6 +40,8 @@
       "@types/window-or-global",
       "@types/node",
       "@types/jest",
+      "@types/chai",
+      "@types/mocha",
     ]
   },
   "include": [
