@@ -2,3 +2,5 @@ node_modules
 /lib
 /coverage
 yarn.lock
+.nyc_output
+.coveralls.yml

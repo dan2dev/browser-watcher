@@ -3,4 +3,5 @@ tsconfig.json
 yarn.lock
 .prettierrc
 .git
-/coverage
+coverage
+.coveralls.yml

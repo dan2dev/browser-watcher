@@ -4,11 +4,11 @@ node_js:
   - 11
   - 10
   - 9
-  - 8
 install:
   - npm install
 script:
   - npm install codecov -g
+  - npm build
   - npm test
   - codecov -f coverage/*.json
 after_success:
